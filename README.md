@@ -12,7 +12,55 @@ The first time you run **PGPEncrypt-Message** it will install BouncyCastle.NetFr
 iex (irm https://raw.githubusercontent.com/nstevens1040/PGPVerify-Fingerprint/main/PGPVerify-Fingerprint.ps1)
 ```
 ## Usage
-  
+```
+
+NAME
+    PGPVerify-Fingerprint
+    
+SYNTAX
+    PGPVerify-Fingerprint [-recipient_public_key] <string> [-known_fingerprint] <string>  [<CommonParameters>]
+    
+    
+PARAMETERS
+    -known_fingerprint <string>
+        
+        Required?                    true
+        Position?                    1
+        Accept pipeline input?       false
+        Parameter set name           (All)
+        Aliases                      None
+        Dynamic?                     false
+        
+    -recipient_public_key <string>
+        
+        Required?                    true
+        Position?                    0
+        Accept pipeline input?       false
+        Parameter set name           (All)
+        Aliases                      None
+        Dynamic?                     false
+        
+    <CommonParameters>
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer, PipelineVariable, and OutVariable. For more information, see 
+        about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216). 
+    
+    
+INPUTS
+    None
+    
+    
+OUTPUTS
+    System.Object
+    
+ALIASES
+    None
+    
+
+REMARKS
+    None
+````
 ## Example
 ```ps1
 PGPVerify-Fingerprint -recipient_public_key @"
